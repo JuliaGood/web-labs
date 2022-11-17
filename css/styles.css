@@ -51,7 +51,35 @@ h1{
 #top-text {
   color: #66CDAA;
 }
+.btn-primary {
+  background-color:#66CDAA;
+  border-color: #66CDAA;
+	box-shadow: 20px 0 20px -20px #000 inset, -20px 0 20px -20px #000 inset;
+	color:white;
+}
+form {
+  border: 2px solid #007196;
+  border-radius: 5px;
+  padding: 15px;
+}
+table {
+  margin: 0 auto;
+}
 
+form, table {
+  max-width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  form, table {
+    max-width: 70%;
+  }
+}
+@media screen and (max-width: 992px) {
+  form, table {
+    max-width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   #logo {
      max-width:100px;
@@ -73,39 +101,21 @@ a {
 
 
 /* ************* */
-/* Main Page */
-.tour-main {
-	border: solid #007196;
+/* Main Page using bootsrtap*/
+.card {
+  align-items: center;
+  margin: 5px 0;
+  border: 2px solid #007196;
   text-align:center;	
 }
-.tour-main img {
+.card img {
 	width:250px;
 	height:170px;
 	padding:5px;
 }
-.tour-main a {
-	background-color:#66CDAA;
-	box-shadow: 20px 0 20px -20px #000 inset, -20px 0 20px -20px #000 inset;
-	color:white;
+
+.col.card-center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
-
-
-/* ************* */
-/* tours.html */
-table#tours {
-	width:80%;
-	margin:auto;
-}	
-table#tours td {
-	text-align: left;
-	border: 2px solid red;
-}
-
-
-/* ************* */
-/* contacts.html*/
-table#form td {
-	text-align: left;
-	border: 2px solid red;
-}
-
