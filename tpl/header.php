@@ -1,3 +1,8 @@
+<?php
+	//Стартуємо сесію
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,26 +30,26 @@
     	if (empty($_SESSION['login']) or empty($_SESSION['id'])) {
     ?>
     <!--скрипт переривається і слідує звичайний html код -->
-    <div id="auth_block">
-    	<div id="link_register">
-        <a href="register.php">Реєстрація</a>
-      </div>
-      <div id="link_auth">
-        <a href="login.php">Авторизація</a>
-      </div>
-    </div>
+		<div class="row" id="auth_block">
+			<div class="col-2 col-sm-3 col-xm-4" id="link_register">
+				<a class="btn-register" href="register.php">Реєстрація</a>
+			</div>
+			<div class="col-2 col-sm-3 col-xm-4" id="link_auth">
+				<a class="btn-register" href="login.php">Авторизація</a>
+			</div>
+		</div>
     <!--скрипт знову починається щоб обробити варіант else -->
     <?php
     }
     // Якщо користувач вже авторизований, потрібно виводити посилання на сторінку, де можна залишити відгук або на сторінку, яка дозволить вийти з авторизації
     else {
     ?>
-    	<div id="exit_block">
-				<div id="link_remark">
-					<a href="testimonials.php">Ви можете залишити відгук</a>
+    	<div class="row" id="exit_block">
+				<div class="col-2 col-sm-3 col-xm-4"  id="link_remark">
+					<a class="btn-register" href="testimonials.php">Залишити відгук</a>
 			  </div>
-				<div id="link_exit">
-					<a href="exit.php">Вихід</a>
+				<div class="col-2 col-sm-3 col-xm-4"  id="link_exit">
+					<a class="btn-register" href="exit.php">Вихід</a>
 			  </div>
     	</div>
 		<?php

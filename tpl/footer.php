@@ -6,9 +6,10 @@
 			</div>
 		</div>
 	</footer>
-  </body>
+
+	</body>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<!-- Підключаемо бібліотеки JavaScript локально -->
 	<script src="js/bootstrap.min.js"> </script>
-  </html>
+</html>

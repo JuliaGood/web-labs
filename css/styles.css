@@ -51,6 +51,12 @@ h1{
 #top-text {
   color: #66CDAA;
 }
+#title-text {
+  color: #66CDAA;
+  font-size: 1.35rem;
+  /* margin-bottom: 25px; */
+  text-align: center;
+}
 .btn-primary {
   background-color:#66CDAA;
   border-color: #66CDAA;
@@ -64,10 +70,23 @@ form {
 }
 table {
   margin: 0 auto;
+  color: black;
 }
 
-form, table {
+form {
   max-width: 50%;
+}
+table {
+  max-width: 80%;
+}
+table, td {
+  border-collapse: collapse;
+  border: 2px solid #007196;
+  padding: 5px 10px;
+}
+
+#auth_block, #exit_block {
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 1200px) {
@@ -79,6 +98,9 @@ form, table {
   form, table {
     max-width: 100%;
   }
+  #auth_block, #exit_block {
+    margin-right: 30px;
+  }
 }
 @media screen and (max-width: 768px) {
   #logo {
@@ -88,7 +110,18 @@ form, table {
   h1{
      font-size:14px;
   }
+  #auth_block, #exit_block {
+    margin-right: 50px;
+  }
 }
+@media screen and (max-width: 600px) {
+  #auth_block, #exit_block {
+    margin-right: 100px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
 
 #menu {
   background-color:#66CDAA;
@@ -99,6 +132,11 @@ a {
   box-shadow: 20px 0 20px -20px #000 inset, -20px 0 20px -20px #000 inset;
 }
 
+.btn-register {
+  padding: 2px 5px;
+  border-radius: 3px;
+  background-color: #007bff;
+}
 
 /* ************* */
 /* Main Page using bootsrtap*/
@@ -118,4 +156,14 @@ a {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.country {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.country img {
+  margin: 25px 0;
 }

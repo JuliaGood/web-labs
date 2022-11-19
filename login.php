@@ -1,5 +1,7 @@
 <?php include_once('tpl/header.php'); ?>
 
+<main class="flex">
+<div class="container">
     <h2>Авторизація</h2>
     <!--Початок форми авторизації. test_user.php – це адреса обробника. Тобто після натискання на кнопку "Увійти" дані з полів передаються обробнику test_user.php методом "post" -->
     <form action="save_login.php" method="post">
@@ -18,5 +20,8 @@
          <input type="submit" name="submit" value="Увійти">
       </p>
    </form>
+
+   </div>
+</main>
 
 <?php include_once('tpl/footer.php'); ?>

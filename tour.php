@@ -1,22 +1,23 @@
-<?php include ('tpl/header.php'); ?>	   
-   <main class="flex">
-      <div class="row">
-          <div class="col">
-            Актуальная информация о туре:
-          </div>
+<?php include ('tpl/header.php'); ?>	 
+
+  <main class="flex">
+    <div class="container">
+
+      <div class="row" id="title-text">
+        <div class="col">
+          Актуальна інформація про тур:
+        </div>
       </div>
-      <div class="container-fluid">
+
       <?php
       //Подключаемся к базе данных
       include ("dbconnect.php");
       /*Получаем из URL страницы id именно того тура, информацию о котором нужно разместить на этой странице сейчас*/
-
       if (!empty($_GET['id'])) {
         $tourId = $_GET['id'];
-
         /*Выполняем запрос к таблице tours БД, чтобы получить все сведения о туре с данным id*/
         $tours = $mysqli->query("SELECT * FROM tours WHERE id='$tourId'");
-        /*Преобразуем строку, полученную в результате запроса в ассоциативный массив, чтобы можно было обращаться к каждому значению по имени поля в таблице*/
+        /*Преобразуем строку, полученную из запроса в массив, чтобы обращаться к каждому значению по имени поля в таблице*/
         $tour = $tours->fetch_assoc();
         /*Формируем переменную, содержащую структуру выводимых значений*/
         $div = '<div class="row">';
@@ -33,7 +34,8 @@
         echo 'Тур не знайдено';
       }
       ?>   
-      </div>
-    </main>
+
+    </div>
+  </main>
 
 <?php include_once('tpl/footer.php'); ?>

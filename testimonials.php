@@ -1,5 +1,7 @@
 <?php include_once('tpl/header.php'); ?>
 
+<main class="flex">
+    <div class="container">
       <h2>Залишіть свій відгук</h2>
       
       <form action="save_testimonials.php" method="post">
@@ -17,6 +19,8 @@
         <p>
             <input type="submit" name="submit" value="Зберегти">
         </p>
-    </form>
+      </form>
+    </main>
+</div>
 
 <?php include_once('tpl/footer.php'); ?>

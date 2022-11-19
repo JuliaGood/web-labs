@@ -1,5 +1,7 @@
 <?php include_once('tpl/header.php'); ?>
 
+<main class="flex">
+<div class="container">
     <h2>Реєстрація</h2>
 
       <!--Початок форми реєстрації. save_user.php – це адреса оброблювача. Тобто після натискання на кнопку "Зареєструватися" дані з полів будуть передані файлу save_user.php методом "post" -->
@@ -24,7 +26,7 @@
           <input type="submit" name="submit" value="Зареєструватися">
        </p>
    </form>
-  </body>
-</html>
 
+</div>
+</main>
 <?php include_once('tpl/footer.php'); ?>

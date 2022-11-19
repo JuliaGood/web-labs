@@ -4,4 +4,4 @@
 					<a class="flex-sm-fill text-sm-center nav-link" href="tours.php">Наші тури</a>
 					<a class="flex-sm-fill text-sm-center nav-link" href="contacts.php">Про нас</a>
 				</nav>
-</div>
+</div> 
